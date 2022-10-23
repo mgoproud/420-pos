@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>420 POS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="bg-dark p-3 main">
+    <div class="row bg-light rounded-3 mx-0 pb-3 section">
+        <div class="brand rounded-top">
+            <small class="title-main">420 ROAD<span> P.O.S</span></small>
+            <ul class="menu-nav nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-orders-tab" data-bs-toggle="pill" data-bs-target="#pills-orders" type="button" role="tab" aria-controls="pills-orders" aria-selected="false">Orders</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-system-tab" data-bs-toggle="pill" data-bs-target="#pills-system" type="button" role="tab" aria-controls="pills-system" aria-selected="false">System</button>
+                </li>
+            </ul>
+            <!-- <small class="text-muted">12:03:00, 20 OCT 2022</small> -->
+        </div>
+        <div class="col-sm-8 h-100 ">
+            
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <ul class="nav nav-pills pos-nav pb-2 my-1" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-food-tab" data-bs-toggle="pill" data-bs-target="#pills-food" type="button" role="tab" aria-controls="pills-food" aria-selected="true">Food</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-beverage-tab" data-bs-toggle="pill" data-bs-target="#pills-beverage" type="button" role="tab" aria-controls="pills-beverage" aria-selected="false">Beverage</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-other-tab" data-bs-toggle="pill" data-bs-target="#pills-other" type="button" role="tab" aria-controls="pills-other" aria-selected="false">Other</button>
+                        </li>
+                      </ul>
+
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-food" role="tabpanel" aria-labelledby="pills-food-tab">
+                            
+                                <div class="row row-cols-1 row-cols-md-5 g-2">
+                                    <div class="col">
+                                        <a href="#">
+                                            <div class="card">
+                                                <img src="img/food-1.jpg" class="card-img-top card-img" alt="...">
+                                                <div class="card-body p-2">
+                                                <h5 class="card-title item-title">Fillet Mignon</h5>
+                                                <p class="card-text">$25.00</p>
+                                                <!-- <p class="card-text">Freshly cut fillet mignon seared and grilled</p> -->
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">
+                                            <div class="card">
+                                                <img src="img/food-2.jpg" class="card-img-top card-img" alt="...">
+                                                <div class="card-body p-2">
+                                                <h5 class="card-title item-title">Grilled Chicken</h5>
+                                                <p class="card-text">$18.00</p>
+                                                <!-- <p class="card-text">Marinated and grilled organic chicken breast</p> -->
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">
+                                            <div class="card">
+                                                <img src="img/food-3.jpg" class="card-img-top card-img" alt="...">
+                                                <div class="card-body p-2">
+                                                <h5 class="card-title item-title">Healthy Bowl</h5>
+                                                <p class="card-text">$17.00</p>
+                                                <!-- <p class="card-text">Mixed superfood with organic grains and greens</p> -->
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">
+                                            <div class="card">
+                                                <img src="img/food-4.jpg" class="card-img-top card-img" alt="...">
+                                                <div class="card-body p-2">
+                                                <h5 class="card-title item-title">Chicken Skewers</h5>
+                                                <p class="card-text">$19.00</p>
+                                                <!-- <p class="card-text">Grilled chicken skewers served with asian noodles</p> -->
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">
+                                            <div class="card">
+                                                <img src="img/food-5.jpg" class="card-img-top card-img" alt="...">
+                                                <div class="card-body p-2">
+                                                <h5 class="card-title item-title">Chicken Rice Eggs</h5>
+                                                <p class="card-text">$20.00</p>
+                                                <!-- <p class="card-text">Fried chicken strips & egg served with steamed rice</p> -->
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                        <div class="col">
+                                            <a href="#">
+                                                <div class="card">
+                                                    <img src="img/food-6.jpg" class="card-img-top card-img" alt="...">
+                                                    <div class="card-body p-2">
+                                                    <h5 class="card-title item-title">420 Burger</h5>
+                                                    <p class="card-text">$19.00</p>
+                                                    <!-- <p class="card-text">Fried chicken strips & egg served with steamed rice</p> -->
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#">
+                                                <div class="card">
+                                                    <img src="img/food-8.jpg" class="card-img-top card-img" alt="...">
+                                                    <div class="card-body p-2">
+                                                    <h5 class="card-title item-title">420 Fried Chicken</h5>
+                                                    <p class="card-text">$17.00</p>
+                                                    <!-- <p class="card-text">Fried chicken strips & egg served with steamed rice</p> -->
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#">
+                                                <div class="card">
+                                                    <img src="img/food-10.jpg" class="card-img-top card-img" alt="...">
+                                                    <div class="card-body p-2">
+                                                    <h5 class="card-title item-title">Fresh Fruits</h5>
+                                                    <p class="card-text">$8.00</p>
+                                                    <!-- <p class="card-text">Fried chicken strips & egg served with steamed rice</p> -->
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#">
+                                                <div class="card">
+                                                    <img src="img/food-11.jpg" class="card-img-top card-img" alt="...">
+                                                    <div class="card-body p-2">
+                                                    <h5 class="card-title item-title">420 Fudge Brownies</h5>
+                                                    <p class="card-text">$11.00</p>
+                                                    <!-- <p class="card-text">Fried chicken strips & egg served with steamed rice</p> -->
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#">
+                                                <div class="card">
+                                                    <img src="img/food-12.jpg" class="card-img-top card-img" alt="...">
+                                                    <div class="card-body p-2">
+                                                    <h5 class="card-title item-title">Cup Cakes</h5>
+                                                    <p class="card-text">$7.00</p>
+                                                    <!-- <p class="card-text">Fried chicken strips & egg served with steamed rice</p> -->
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-beverage" role="tabpanel" aria-labelledby="pills-beverage-tab">
+                            <div class="row row-cols-1 row-cols-md-5 g-2">
+                                <div class="col">
+                                    <a href="#">
+                                        <div class="card">
+                                            <img src="img/bev-1.jpg" class="card-img-top card-img" alt="...">
+                                            <div class="card-body p-2">
+                                            <h5 class="card-title item-title text-truncate">Orange Old Fashion</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <div class="card">
+                                            <img src="img/bev-2.jpg" class="card-img-top card-img" alt="...">
+                                            <div class="card-body p-2">
+                                            <h5 class="card-title item-title text-truncate">Iced Caramel Latte</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <div class="card">
+                                            <img src="img/bev-3.jpg" class="card-img-top card-img" alt="...">
+                                            <div class="card-body p-2">
+                                            <h5 class="card-title item-title text-truncate">Mint Mojito</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <div class="card">
+                                            <img src="img/bev-4.jpg" class="card-img-top card-img" alt="...">
+                                            <div class="card-body p-2">
+                                            <h5 class="card-title item-title text-truncate">Single Malt 'Scotch'</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <div class="card">
+                                            <img src="img/bev-5.jpg" class="card-img-top card-img" alt="...">
+                                            <div class="card-body p-2">
+                                            <h5 class="card-title item-title text-truncate">Cappuccino</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <div class="card">
+                                            <img src="img/bev-6.jpg" class="card-img-top card-img" alt="...">
+                                            <div class="card-body p-2">
+                                            <h5 class="card-title item-title text-truncate">Blueberry Tonic</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+        
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab">Other</div>
+                      </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-orders" role="tabpanel" aria-labelledby="pills-orders-tab">
+                    <h1>ORDERS PAGE</h1>
+                </div>
+
+                <div class="tab-pane fade" id="pills-system" role="tabpanel" aria-labelledby="pills-system-tab">
+                    
+                    <h1>SYSTEM PAGE</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-sm-4 h-100 px-0">
+            <div class="orders-section">
+                <div class="order-header">
+                    <div class="order-title">
+                        <p>
+                            <span class="order-number">Order#</span>
+                            <br>
+                            <span class="order-number" id="order-number">0012345</span>
+                        </p>
+                    </div>
+                        
+                    <div class="card">
+                        <img class="inv-logo" src="img/420-road-logo.png" alt="">                     
+                        <div class="card-body">
+                            <p class="card-title">420 ROAD</p>
+                        </div>
+                    </div>
+                    <div class="order-datetime">
+                        <p>
+                            <span class="order-date" id="date"></span>
+                            <br>
+                            <span class="order-date" id="time"></span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="order-body">
+                    <div class="row invoice-line">
+                        <div class="col-sm-4"><p class="title">ITEM</p></div>
+                        <div class="col-sm-1"><p class="title">QTY</p></div>          
+                        <div class="col-sm-2"><p class="title">UNIT PRICE</p></div>
+                        <div class="col-sm-2"><p class="title">TOTAL PRICE</p></div>
+                    </div>
+                    <hr class="hr">
+                    <div class="invoice-body">
+                        
+                        <div class="row invoice-line">
+                            <div class="col-sm-4">
+                                <p class="item">Fillet Mignon</p>
+                            </div>
+                            <div class="col-sm-1">
+                                <p class="item">1</p>
+                            </div> 
+                            <div class="col-sm-2">
+                                <p class="item"><span class="dollar-sym">$</span>25.00</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p class="item"><span class="dollar-sym">$</span>25.00</p>
+                            </div>
+                        </div>
+                        <hr class="hr">
+                        <div class="row invoice-line">
+                            <div class="col-sm-4">
+                                <p class="item">Healthy Bowl</p>
+                            </div>
+                            <div class="col-sm-1">
+                                <p class="item">2</p>
+                            </div>  
+                            <div class="col-sm-2">
+                                <p class="item"><span class="dollar-sym">$</span>17.00</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p class="item"><span class="dollar-sym">$</span>34.00</p>
+                            </div>
+                        </div>
+                        <hr class="hr">
+                        <div class="row invoice-line">
+                            <div class="col-sm-4">
+                                <p class="item">Chicken Rice & Eggs</p>
+                            </div>
+                            <div class="col-sm-1">
+                                <p class="item">1</p>
+                            </div>  
+                            <div class="col-sm-2">
+                                <p class="item"><span class="dollar-sym">$</span>13.00</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p class="item"><span class="dollar-sym">$</span>13.00</p>
+                            </div>
+                        </div>
+                        <hr class="hr">
+                        <div class="row invoice-line">
+                            <div class="col-sm-4">
+                                <p class="item">420 Burger</p>
+                            </div>
+                            <div class="col-sm-1">
+                                <p class="item">4</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p class="item"><span class="dollar-sym">$</span>19.00</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p class="item"><span class="dollar-sym">$</span>76.00</p>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="row total-line">
+                        <div class="col-sm-4">
+                            <p class="item"># OF ITEMS</p>
+                        </div>
+                        <div class="col-sm-1">
+                            <p class="item">8</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p class="item">TOTAL</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p class="item"><span class="dollar-sym">$</span>148.00</p>
+                        </div>
+                    </div>  
+                </div>  
+            </div>
+            
+        </div>
+            
+        <footer class="footer">
+            <p>420 ROAD-ALL RIGHTS RESERVED &copy;</p>
+            <p>CONTACT THE RESELLER</p>
+            <p>DEVELOPED BY <span class="onecode">ONE1CODE</span></p>
+        </footer>
+            </div>
+            
+        </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

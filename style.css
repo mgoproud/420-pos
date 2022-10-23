@@ -1,0 +1,386 @@
+/* COLORS */
+/* DARK: #212529 */
+/* GREEN: #119033 */
+/* BROWN: #A3401B */
+/* ORANGE: #EC6F2D */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.main {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.section {
+    height: 92%;
+    background-color: rgb(233, 231, 231) !important;
+    /* padding: 0; */
+    /* overflow-y: scroll; */
+}
+
+.brand {
+    height: 120px;
+    background-color: rgba(248, 248, 237, 0.907);
+    background-image: url('img/420-road-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 0.6rem; */
+    margin-bottom: 0.1rem;
+    /* border-bottom: 2px solid #004512; */
+    border-bottom: 2px solid #212529;
+}
+
+.title-main {
+    color: #212529;
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    /* word-spacing: 2px; */
+}
+
+.title-main span {
+    font-size: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    /* word-spacing: 2px; */
+    color: #119033;
+    margin-left: 15px;
+}
+
+.nav li {
+    cursor: pointer;
+}
+
+.menu-nav {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    font-weight: 500;
+
+}
+
+.menu-nav .nav-link.active {
+    background-color: #119033;
+} 
+
+.nav-link {
+    color: #212529;
+    margin: 0 0.1rem;
+    font-size: 0.97rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: rgb(168, 174, 188);
+}
+
+.pos-nav .nav-link.active {
+    background-color: #212529;
+}
+
+
+
+.text-muted {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+}
+
+.card {
+    max-width: 300px;
+    /* border: none; */
+    border: 2px solid #212529;
+    cursor: pointer;
+    transition: all 0.16s ease-in-out;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    background-color: #383a3e;
+    color: white;
+    transform: scale(1.03);
+}
+
+.card-img {
+    height: 131px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.card-img::before {
+    position: relative;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+
+}
+
+.card-body {
+    text-align: center;
+
+}
+
+.item-title {
+    /* display: flex; */
+    font-size: 0.92em;
+    text-align: center;
+    padding: 0.18rem 0;
+    margin: 0;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.card-text {
+    display: inline;
+    color: #119033;
+    font-size: 0.9em;
+    font-weight: 700;
+    font-style: italic;
+    padding: 0.18rem 0;
+    letter-spacing: 1px;
+}
+
+.orders-section {
+    width: 100%;
+    height: 60vh;
+    padding: 0.5rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: inset 0em 0em 0.2em 0.12em #212529;
+    overflow-y: scroll;
+}
+
+.orders-section .card {
+    width: 104px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    cursor: default;
+}
+
+.orders-section .card:hover,
+.orders-section .card:focus,
+.orders-section .card:active {
+    background-color: white;
+    color: #000;
+    transform: scale(1);
+}
+
+.orders-section .card-body {
+    padding: 0;
+}
+
+.orders-section .card-body p {
+    font-size: 0.98rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0.5rem 0;
+    margin-bottom: 1.6rem;
+    border-bottom: 2px dotted black;
+}
+
+.order-title {
+    width: 125px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* flex-wrap: wrap; */
+    /* font-size: 2rem; */
+}
+
+.order-number,
+.order-date {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.inv-logo {
+    margin-bottom: 0.2rem;
+}
+
+.order-datetime {
+    width: 125px;
+    text-align: end;
+}
+
+.invoice-number {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h6 {
+    display: flex;
+}
+
+.title {
+    font-size: 0.74rem;
+    font-weight: 500;
+    margin: 0.2rem 0;
+
+}
+
+.invoice-line {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    padding-bottom: 0.25rem;
+}
+
+.orders-list {
+    padding: 0;
+}
+
+.item {
+    font-size: 0.85rem;
+    margin: 0.3rem 0;
+}
+
+.hr {
+    display: none;
+    margin: 8px 0;
+}
+
+.invoice-line:last-of-type  {
+    /* border-bottom: 1px dashed black; */
+    /* padding-bottom: 1rem; */
+    /* margin-bottom: 1rem; */
+}
+
+.invoice-body {
+    padding: 0;
+}
+
+.total-line {
+    /* width: 100%; */
+    /* background-color: rgb(222, 231, 231); */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-top: 0.4rem;
+    border-top: 1px dashed black;
+}
+
+
+
+.total-line .item {
+    font-size: 0.87rem;
+    font-weight: 500;
+    /* letter-spacing: -1px; */
+    font-style: italic;
+}
+
+.dollar-sym {
+    padding-right: 0.2rem;
+}
+
+.inv-btn-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 0.25rem;
+}
+
+.inv-btn {
+    width: 6rem;
+    background-color: #212529;
+    color: white;
+    border-radius: 8px;
+}
+
+.inv-btn:hover {
+    color: white;
+}
+
+.pay-btn {
+    width: 10rem;
+    background-color: #119033;
+    /* flex-grow: 2; */
+}
+
+.pay-btn:hover {
+    background-color: #0b6523;
+}
+
+.hold-btn {
+    width: 7rem;
+    background-color: #475159c1;
+    /* flex-grow: 1; */
+}
+
+.hold-btn:hover {
+    background-color: #212529;
+}
+
+.clear-btn {
+    width: 7rem;
+    background-color: rgba(232, 0, 0, 0.75);
+    /* flex-grow: 1; */
+}
+
+.clear-btn:hover {
+    background-color: rgb(147, 0, 0);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-right: 1.9em;
+    color: white;
+}
+
+.footer p,
+.onecode {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 1.75px;
+}
+
+.onecode {
+    color: red;
+    font-weight: 700;
+}
